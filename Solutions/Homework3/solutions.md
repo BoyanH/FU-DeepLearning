@@ -14,8 +14,14 @@
   * one fires when x > -d (-d bias)
   * one fires when x < d = -x > -d (-d bias, -1 weight)
   * one fires when both of the others fire (2 bias)
+  * so 2 in hidden, one in output
 * in order to accomplish this with sigmoid, we need to scale up the values (bigger weights) 
 to get close to a step-wise activation function
+
+d > x > -d
+
+~ 
+
 
 
 3. C)
@@ -35,3 +41,11 @@ to get close to a step-wise activation function
 7.
 8. C)
   * but assuming question actually means to theta^+ instead of theta^*
+9. C)
+  * 9 hidden layers, number of neurons must be choosen (9 hyperparams from here)
+  * 4 hyperparams for adam
+    * beta1 and beta2 for 1 and 2 moment running means
+    * learning rate
+    * epsilon for numerical stability
+  * the choice of a non-linear activation function is also a hyperparam
+  * Total: 14
