@@ -36,9 +36,24 @@ d > x > -d
   * 6822 * 4 = 27 288  bytes (32 bits = 4 bytes)
   * question seems to check if we will forget the biases
 4. B)
-5. 
-6.
-7.
+5. B) (but should be C))
+  * let's look at 1D case for x_2
+  * C_1
+    * f(x) = x^2/2
+    * f'(x) = x
+    * f''(x) = 1 
+    * takes 1000 iterations for newton => same amount for gradient descent
+	as the inverse heassian matrix won't do anything in this case
+  * C_2
+    * f(x) =x^2/2 * 10^{-3}
+    * f'(x) = x * 10^{-3}
+    * f''(x) = 10^{-3}
+  * so hessian = [[1, 0], [0, 10^{-3}]]
+  * inverse hessian = [[1, 0], [0, 1000]]
+  * that means 2. dimension needs 10^3 more steps in gradient descend
+  * so it will take 10^3 (steps for C_1) * 10^3 = 10^6 steps for gradient descent, where as newton will still need 10^3
+6. B)
+7. C)
 8. C)
   * but assuming question actually means to theta^+ instead of theta^*
 9. C)
