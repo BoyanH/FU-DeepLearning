@@ -1,6 +1,6 @@
 ### 5. Homework
 
-1. 3) (or c))
+1. C)
   * we first find the eigenvalues, get the largest ones and project X onto them
   * we end up with a basis where the data grows the most in the direction of the 
     first basis vector, then 2. and so on
@@ -12,7 +12,7 @@
   * Dense -> 128*128*256 + 256*128*128 = 8 388 608 parameters (no biases)
   * Convolutions
     * 64*8*8 * 2 = 8 192
-3. 1)
+3. A)
   * 1) the covariance matrix is symmetric, therefore has real eigenvalues
   * 2) C is symmetric, therefore correct
   * 3) When x is eigenvalue, then A.v = x.v for v eigenvector corresponding to x.
@@ -45,15 +45,15 @@
   * width = (W - F + 2P) / S + 1 = (w - n) / s + 1
   * height = (h - n) / s + 1
 
-7. C)
+7. B)
   * we look at the bigger dimension (height) (as it scales slower in this direction)
   * in a convolution, a map's pixel value depends on all the pixels in the receptive field
-  * so after 1. layer, value of 5. pixel also depends on 1. one
-  * after 2. player, value of 6. pixel also depends on 1. one
-  * ... so on, 6 layers in total to reach 10. pixel depending on 1. one
-  * formula is same as distance between numbers (high - low + 1) = (10 - 5 + 1) = 6
-
-8. C)
+  * so after 1. layer, value of 3. pixel also depends on 1. one
+  * after 2. player, value of 5. pixel also depends on 1. one
+  * 3. layer, 7. pixel
+  * 4. layer, 9. pixel
+  * 5. layer, 10. pixel, ready
+8. B)
   * (20 - 4) // 2 + 1 = 9
   * (9 - 4) // 2 + 1 = 3
   * at layer 3, the dimension is already smaller than receptive field
